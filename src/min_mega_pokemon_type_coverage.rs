@@ -1,5 +1,6 @@
-use std::collections::{HashMap, HashSet};
+use std::collections::HashSet;
 
+use crate::core::build_type_mons_map;
 use crate::pokemon::MegaPokemons;
 use crate::r#type::TypeBitFlag;
 
@@ -50,46 +51,5 @@ fn find_min_for_type_coverage(megas: MegaPokemons) {
             .collect();
         let intersection_megas = type_a_megas.intersection(&type_b_megas);
         println!("{:?},{:?}: {:?}", type_a, type_b, intersection_megas);
-    }
-}
-
-fn build_type_mons_map(megas: &MegaPokemons) -> HashMap<TypeBitFlag, Vec<&str>> {
-    let mut type_megas: HashMap<TypeBitFlag, Vec<&str>> = HashMap::new();
-    for mon in megas.0.iter() {
-        let mut types = vec![mon.type_1];
-        if let Some(type_2) = mon.type_2 {
-            types.push(type_2);
-        }
-        for t in types.into_iter() {
-            match type_megas.get_mut(&t) {
-                Some(mons) => {
-                    mons.push(&mon.name);
-                }
-                None => {
-                    type_megas.insert(t, vec![&mon.name]);
-                }
-            }
-        }
-    }
-    type_megas
-}
-
-pub fn print_per_type_ascending() {
-    let megas = MegaPokemons::new();
-
-    let type_mons_map = build_type_mons_map(&megas);
-
-    let mut types: Vec<TypeBitFlag> = type_mons_map.keys().cloned().collect();
-    types.sort_by(|a, b| {
-        type_mons_map
-            .get(a)
-            .unwrap()
-            .len()
-            .cmp(&type_mons_map.get(b).unwrap().len())
-    });
-
-    for t in types.iter() {
-        let mons = type_mons_map.get(t).unwrap();
-        println!("{:?} ({}): {}", t, mons.len(), mons.join(", "));
     }
 }
