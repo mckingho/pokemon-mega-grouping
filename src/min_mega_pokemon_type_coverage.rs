@@ -1,7 +1,7 @@
 use std::collections::HashSet;
 
 use crate::core::build_type_mons_map;
-use crate::pokemon::MegaPokemons;
+use crate::pokemon::{MegaPokemons, Pokemon};
 use crate::r#type::TypeBitFlag;
 
 use gamma::graph::DefaultGraph;
@@ -9,27 +9,20 @@ use gamma::matching::{maximum_matching, Pairing};
 
 pub fn find_min_mega_for_type_coverage() {
     let megas = MegaPokemons::new();
-    find_min_for_type_coverage(megas);
+    find_one(megas);
 }
 
 pub fn find_min_mega_for_type_coverage_with_primals() {
     let megas = MegaPokemons::new_with_primals();
-    find_min_for_type_coverage(megas);
+    find_one(megas);
 }
 
-fn find_min_for_type_coverage(megas: MegaPokemons) {
+fn find_one(megas: MegaPokemons) {
     let type_mons_map = build_type_mons_map(&megas);
+    let types: Vec<TypeBitFlag> = TypeBitFlag::vec();
 
-    let mut types_graph = DefaultGraph::new();
-    let types: Vec<TypeBitFlag> = type_mons_map.keys().cloned().collect();
-    for t in types.into_iter() {
-        let _ = types_graph.add_node(t as usize);
-    }
-    for mon in megas.0.iter() {
-        if let Some(type_2) = mon.type_2 {
-            let _ = types_graph.add_edge(mon.type_1 as usize, type_2 as usize);
-        }
-    }
+    let types_graph = build_types_graph(&types, &megas.0);
+
     let mut types_pairing = Pairing::new();
     maximum_matching(&types_graph, &mut types_pairing);
     // There is perfect matching in the graph of mega types.
@@ -52,4 +45,20 @@ fn find_min_for_type_coverage(megas: MegaPokemons) {
         let intersection_megas = type_a_megas.intersection(&type_b_megas);
         println!("{:?},{:?}: {:?}", type_a, type_b, intersection_megas);
     }
+}
+
+/// build graph of types,
+/// with edges representing pokemon dual types
+fn build_types_graph(types: &Vec<TypeBitFlag>, mega_mons: &Vec<Pokemon>) -> DefaultGraph {
+    let mut types_graph = DefaultGraph::new();
+    for t in types.iter() {
+        let _ = types_graph.add_node(t.clone() as usize);
+    }
+    for mon in mega_mons.iter() {
+        if let Some(type_2) = mon.type_2 {
+            let _ = types_graph.add_edge(mon.type_1 as usize, type_2 as usize);
+        }
+    }
+
+    types_graph
 }

@@ -32,4 +32,27 @@ impl TypeBitFlag {
             Err(_) => None,
         }
     }
+
+    pub fn vec() -> Vec<TypeBitFlag> {
+        vec![
+            Self::Normal,
+            Self::Fighting,
+            Self::Flying,
+            Self::Poison,
+            Self::Ground,
+            Self::Rock,
+            Self::Bug,
+            Self::Ghost,
+            Self::Steel,
+            Self::Fire,
+            Self::Water,
+            Self::Grass,
+            Self::Electric,
+            Self::Psychic,
+            Self::Ice,
+            Self::Dragon,
+            Self::Dark,
+            Self::Fairy,
+        ]
+    }
 }
