@@ -55,4 +55,15 @@ impl TypeBitFlag {
             Self::Fairy,
         ]
     }
+
+    pub fn pogo_primals_bonus_vec() -> Vec<TypeBitFlag> {
+        vec![
+            Self::Ground,   // Groudon
+            Self::Bug,      // Kyogre
+            Self::Fire,     // Groudon
+            Self::Water,    // Kyogre
+            Self::Grass,    // Groudon
+            Self::Electric, // Kyogre
+        ]
+    }
 }
