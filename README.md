@@ -32,48 +32,4 @@ Ghost,Dark: ["Sableye"]
 Rock,Fairy: ["Diancie"]
 Fighting,Fire: ["Blaziken"]
 ```
-Other possible matching (not full)
-```
-Water,Psychic: ["Slowbro"]
-Ground,Steel: ["Steelix"]
-Flying,Rock: ["Aerodactyl"]
-Grass,Ice: ["Abomasnow"]
-Poison,Ghost: ["Gengar"]
-Normal,Fairy: ["Audino"]
-Electric,Dragon: ["Ampharos"]
-Fighting,Bug: ["Heracross"]
-Fire,Dark: ["Houndoom"]
-```
-```
-Grass,Ice: ["Abomasnow"]
-Flying,Fire: ["Charizard Y"]
-Electric,Dragon: ["Ampharos"]
-Ghost,Dark: ["Sableye"]
-Poison,Bug: ["Beedrill"]
-Water,Psychic: ["Slowbro"]
-Normal,Fighting: ["Lopunny"]
-Rock,Fairy: ["Diancie"]
-Ground,Steel: ["Steelix"]
-```
-```
-Normal,Fighting: ["Lopunny"]
-Bug,Steel: ["Scizor"]
-Grass,Ice: ["Abomasnow"]
-Flying,Rock: ["Aerodactyl"]
-Psychic,Fairy: ["Gardevoir"]
-Electric,Dragon: ["Ampharos"]
-Ground,Water: ["Swampert"]
-Fire,Dark: ["Houndoom"]
-Poison,Ghost: ["Gengar"]
-```
-```
-Water,Dark: ["Sharpedo", "Gyarados"]
-Normal,Flying: ["Pidgeot"]
-Fighting,Psychic: ["Mewtwo X", "Gallade", "Medicham"]
-Poison,Ghost: ["Gengar"]
-Rock,Fairy: ["Diancie"]
-Grass,Ice: ["Abomasnow"]
-Bug,Steel: ["Scizor"]
-Electric,Dragon: ["Ampharos"]
-Ground,Fire: ["Camerupt"]
-```
+Full list of possible teams [here](type_coverage.md).
