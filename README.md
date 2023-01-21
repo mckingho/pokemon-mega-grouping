@@ -41,10 +41,12 @@ Full list of possible teams [here](type_coverage.md).
 
 # Minimum type coverage with Kyogre Groudon in Pokemon Go
 ```
-Fighting,Psychic: ["Gallade", "Mewtwo X", "Medicham"]
-Steel,Fairy: ["Mawile"]
 Normal,Flying: ["Pidgeot"]
-Rock,Dark: ["Tyranitar"]
-Poison,Ghost: ["Gengar"]
+Fighting,Steel: ["Lucario"]
+Ghost,Dark: ["Sableye"]
+Psychic,Dragon: ["Latios", "Latias"]
+Rock,Fairy: ["Diancie"]
+Ice,*: ["Glalie", "Abomasnow"]
+Poison,*: ["Venusaur", "Beedrill", "Gengar"]
 ```
 Full list of possible teams [here](type_coverage_primals_pogo.md).

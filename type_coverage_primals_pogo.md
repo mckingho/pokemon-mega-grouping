@@ -6,33 +6,51 @@ Fire,Grass,Ground: Groudon
 ```
 ## Group 1
 ```
-Fighting,Psychic: ["Gallade", "Mewtwo X", "Medicham"]
-Steel,Fairy: ["Mawile"]
-Normal,Flying: ["Pidgeot"]
-Rock,Dark: ["Tyranitar"]
 Poison,Ghost: ["Gengar"]
+Normal,Flying: ["Pidgeot"]
+Steel,Fairy: ["Mawile"]
+Rock,Dark: ["Tyranitar"]
+Fighting,Psychic: ["Medicham", "Mewtwo X", "Gallade"]
+Ice,*: ["Glalie", "Abomasnow"]
+Dragon,*: ["Charizard X", "Ampharos", "Sceptile", "Altaria", "Salamence", "Latias", "Latios", "Rayquaza", "Garchomp"]
 ```
 ## Group 2
 ```
-Rock,Dark: ["Tyranitar"]
 Normal,Flying: ["Pidgeot"]
-Psychic,Fairy: ["Gardevoir"]
 Fighting,Steel: ["Lucario"]
-Poison,Ghost: ["Gengar"]
+Ghost,Dark: ["Sableye"]
+Psychic,Dragon: ["Latios", "Latias"]
+Rock,Fairy: ["Diancie"]
+Ice,*: ["Glalie", "Abomasnow"]
+Poison,*: ["Venusaur", "Beedrill", "Gengar"]
 ```
 ## Group 3
 ```
-Dragon,Fairy: ["Altaria"]
+Flying,Rock: ["Aerodactyl"]
 Poison,Ghost: ["Gengar"]
+Dragon,Fairy: ["Altaria"]
 Normal,Fighting: ["Lopunny"]
 Steel,Psychic: ["Metagross"]
-Flying,Rock: ["Aerodactyl"]
+Dark,*: ["Gyarados", "Houndoom", "Tyranitar", "Sableye", "Sharpedo", "Absol"]
+Ice,*: ["Glalie", "Abomasnow"]
 ```
 ## Group 4
 ```
-Rock,Fairy: ["Diancie"]
-Fighting,Steel: ["Lucario"]
-Psychic,Dragon: ["Latias", "Latios"]
-Normal,Flying: ["Pidgeot"]
+Psychic,Fairy: ["Gardevoir"]
 Poison,Ghost: ["Gengar"]
+Rock,Dark: ["Tyranitar"]
+Normal,Flying: ["Pidgeot"]
+Fighting,Steel: ["Lucario"]
+Ice,*: ["Glalie", "Abomasnow"]
+Dragon,*: ["Charizard X", "Ampharos", "Sceptile", "Altaria", "Salamence", "Latias", "Latios", "Rayquaza", "Garchomp"]
+```
+## Group 5
+```
+Poison,Ghost: ["Gengar"]
+Normal,Flying: ["Pidgeot"]
+Fighting,Steel: ["Lucario"]
+Psychic,Dragon: ["Latios", "Latias"]
+Rock,Fairy: ["Diancie"]
+Ice,*: ["Glalie", "Abomasnow"]
+Dark,*: ["Gyarados", "Houndoom", "Tyranitar", "Sableye", "Sharpedo", "Absol"]
 ```
