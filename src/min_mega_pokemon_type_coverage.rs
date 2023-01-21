@@ -39,12 +39,16 @@ impl MultipleMatchings {
 }
 
 /// Matching of types graph
+/// edge: pokemon with dual types
+/// node: type
 #[derive(Clone)]
 struct Matching {
     pub edges: Vec<(usize, usize)>,
 
     // sum of tuple elements in edges, sorted
     pub sorted_sums: Vec<usize>,
+
+    pub isolated_nodes: Vec<usize>,
 }
 
 impl Matching {
@@ -52,7 +56,38 @@ impl Matching {
         let edges: Vec<(usize, usize)> = pairing.edges().collect();
         let mut sorted_sums: Vec<usize> = edges.iter().map(|(a, b)| a + b).collect();
         sorted_sums.sort();
-        Self { edges, sorted_sums }
+        Self {
+            edges,
+            sorted_sums,
+            isolated_nodes: vec![],
+        }
+    }
+
+    pub fn from_pairing_for_pogo_primals(pairing: Pairing) -> Self {
+        let edges: Vec<(usize, usize)> = pairing.edges().collect();
+        let mut sorted_sums: Vec<usize> = vec![];
+        let mut types_set: HashSet<TypeBitFlag> = TypeBitFlag::vec().iter().cloned().collect();
+        for (a, b) in edges.iter() {
+            sorted_sums.push(a + b);
+
+            // remove connected nodes
+            let type_a = TypeBitFlag::num_to_enum(*a).unwrap();
+            let type_b = TypeBitFlag::num_to_enum(*b).unwrap();
+            types_set.remove(&type_a);
+            types_set.remove(&type_b);
+        }
+        sorted_sums.sort();
+        let primals_bonus_types: HashSet<TypeBitFlag> = TypeBitFlag::pogo_primals_bonus_vec()
+            .iter()
+            .cloned()
+            .collect();
+        let diff = types_set.difference(&primals_bonus_types);
+        let isolated_nodes: Vec<usize> = diff.map(|t| *t as usize).collect();
+        Self {
+            edges,
+            sorted_sums,
+            isolated_nodes,
+        }
     }
 
     pub fn print(&self, type_mons_map: &HashMap<TypeBitFlag, Vec<&str>>) {
@@ -73,6 +108,13 @@ impl Matching {
                 .collect();
             let intersection_megas = type_a_megas.intersection(&type_b_megas);
             println!("{:?},{:?}: {:?}", type_a, type_b, intersection_megas);
+        }
+
+        // print isolated type and respective mons
+        for t in self.isolated_nodes.iter() {
+            let isolated_type = TypeBitFlag::num_to_enum(*t).unwrap();
+            let megas = type_mons_map.get(&isolated_type).unwrap();
+            println!("{:?},*: {:?}", isolated_type, megas);
         }
     }
 }
@@ -269,7 +311,7 @@ fn find_all_for_pogo_primals(megas: &MegaPokemons) {
     let skip_types: Vec<TypeBitFlag> = TypeBitFlag::pogo_primals_bonus_vec();
 
     // find one matching
-    let mat = Matching::from_pairing(find_one_for_pogo_primals(megas));
+    let mat = Matching::from_pairing_for_pogo_primals(find_one_for_pogo_primals(megas));
     let mat_len = mat.edges.len();
     let indices: Vec<usize> = (1..mat_len).collect(); // for combinations generation
     let mut all = MultipleMatchings { matchings: vec![] };
@@ -295,7 +337,7 @@ fn find_all_for_pogo_primals(megas: &MegaPokemons) {
             // find new matching
             let mut types_pairing = Pairing::new();
             maximum_matching(&types_graph, &mut types_pairing);
-            let new_mat = Matching::from_pairing(types_pairing);
+            let new_mat = Matching::from_pairing_for_pogo_primals(types_pairing);
 
             if new_mat.edges.len() < mat_len {
                 continue;
