@@ -1,3 +1,8 @@
+# Table of Contents
+1. [List of Mega by types](#list-of-mega-by-types)
+1. [Minimum Mega to cover all types](#minimum-mega-to-cover-all-types)
+1. [Minimum type coverage with Kyogre Groudon in Pokemon Go](#minimum-type-coverage-with-kyogre-groudon-in-pokemon-go)
+
 # List of Mega by types
 ```
 Ice (2): Glalie, Abomasnow
@@ -33,3 +38,13 @@ Rock,Fairy: ["Diancie"]
 Fighting,Fire: ["Blaziken"]
 ```
 Full list of possible teams [here](type_coverage.md).
+
+# Minimum type coverage with Kyogre Groudon in Pokemon Go
+```
+Fighting,Psychic: ["Gallade", "Mewtwo X", "Medicham"]
+Steel,Fairy: ["Mawile"]
+Normal,Flying: ["Pidgeot"]
+Rock,Dark: ["Tyranitar"]
+Poison,Ghost: ["Gengar"]
+```
+Full list of possible teams [here](type_coverage_primals_pogo.md).
