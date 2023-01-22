@@ -127,7 +127,7 @@ impl Ord for Matching {
         for i in 0..min(self_len, other_len) {
             if self.sorted_sums[i] < other.sorted_sums[i] {
                 return Ordering::Less;
-            } else if self.sorted_sums[i] < other.sorted_sums[i] {
+            } else if self.sorted_sums[i] > other.sorted_sums[i] {
                 return Ordering::Greater;
             } else {
                 continue;
@@ -200,7 +200,7 @@ fn find_all(megas: &MegaPokemons) {
     // find one matching
     let mat = Matching::from_pairing(find_one(megas));
     let mat_len = mat.edges.len();
-    let indices: Vec<usize> = (1..mat_len).collect(); // for combinations generation
+    let indices: Vec<usize> = (0..mat_len).collect(); // for combinations generation
     let mut all = MultipleMatchings { matchings: vec![] };
     all.push(mat.clone());
 
@@ -218,7 +218,7 @@ fn find_all(megas: &MegaPokemons) {
         is_found_in_i = false;
         for c in com.iter() {
             // rebuild graph by skipping combinations of edges from first matching
-            let skips: Vec<(usize, usize)> = c.iter().map(|idx| mat.edges[idx - 1]).collect();
+            let skips: Vec<(usize, usize)> = c.iter().map(|idx| mat.edges[*idx]).collect();
             let types_graph = build_types_graph_skip_edges(&types, &megas.0, &skips, &vec![]);
 
             // find new matching
@@ -313,7 +313,7 @@ fn find_all_for_pogo_primals(megas: &MegaPokemons) {
     // find one matching
     let mat = Matching::from_pairing_for_pogo_primals(find_one_for_pogo_primals(megas));
     let mat_len = mat.edges.len();
-    let indices: Vec<usize> = (1..mat_len).collect(); // for combinations generation
+    let indices: Vec<usize> = (0..mat_len).collect(); // for combinations generation
     let mut all = MultipleMatchings { matchings: vec![] };
     all.push(mat.clone());
 
@@ -331,7 +331,7 @@ fn find_all_for_pogo_primals(megas: &MegaPokemons) {
         is_found_in_i = false;
         for c in com.iter() {
             // rebuild graph by skipping combinations of edges from first matching
-            let skips: Vec<(usize, usize)> = c.iter().map(|idx| mat.edges[idx - 1]).collect();
+            let skips: Vec<(usize, usize)> = c.iter().map(|idx| mat.edges[*idx]).collect();
             let types_graph = build_types_graph_skip_edges(&types, &megas.0, &skips, &skip_types);
 
             // find new matching
