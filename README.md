@@ -41,6 +41,8 @@ Full list of possible teams [here](type_coverage.md).
 
 # Minimum type coverage with Kyogre Groudon in Pokemon Go
 ```
+Water,Electric,Bug: ["Kyogre"]
+Fire,Grass,Ground: ["Groudon"]
 Normal,Flying: ["Pidgeot"]
 Fighting,Steel: ["Lucario"]
 Ghost,Dark: ["Sableye"]
