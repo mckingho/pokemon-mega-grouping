@@ -18,7 +18,7 @@
 
 | Card | Type | Stage | HP | Attack | Weakness | Attack Energy | Retreat |
 |:-|:-:|:-:|-:|-:|:-:|:-|:-|
-| Caterpie | 🥬 | Basic | 50 |  | 🔥 | ✶ | ✶✶ |
+| Caterpie | 🥬 | Basic | 50 |  | 🔥 | ✶ | ✶ |
 | Metapod | 🥬 | Stage 1 | 80 | 30 | 🔥 | ✶✶ | ✶✶ |
 | Cottonee | 🥬 | Basic | 50 | 10 | 🔥 | ✶ | ✶ |
 | Whimsicott | 🥬 | Stage 1 | 80 | 40 | 🔥 | ✶ | ✶ |
