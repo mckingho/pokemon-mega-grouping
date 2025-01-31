@@ -12,6 +12,7 @@
 | ✊ | Fighting |
 | 🌒 | Darkness |
 | ⌬ | Metal |
+| 🐉 | Dragon |
 | ✶ | Colorless |
 
 ## Non-Colorless Type, Colorless Energy Attacks
@@ -24,6 +25,10 @@
 | Whimsicott | 🥬 | Stage 1 | 80 | 40 | 🔥 | ✶ | ✶ |
 | Skiddo | 🥬 | Basic | 70 | 40x | 🔥 | ✶ | ✶ |
 | Exeggcute<br>(Mythical Island) | 🥬 | Basic | 50 |  | 🔥 | ✶ | ✶ |
+| Yanma | 🥬 | Basic | 50 | 20 | ⚡ | ✶ | ✶ |
+| Yanmega EX | 🥬 | Stage 1 | 140 | 120 | ⚡ | ✶✶✶ | ✶ |
+| Burmy | 🥬 | Basic | 60 | 10 | 🔥 | ✶ | ✶ |
+| Combee | 🥬 | Basic | 50 |  | 🔥 | ✶ | ✶ |
 | Vulpix | 🔥 | Basic | 50 |  | 💧 | ✶ | ✶ |
 | Growlithe | 🔥 | Basic | 70 | 20 | 💧 | ✶✶ | ✶ |
 | Sizzlipede | 🔥 | Basic | 60 | 10 | 💧 | ✶ | ✶ |
@@ -39,16 +44,24 @@
 | Froakie | 💧 | Basic | 60 | 10 | ⚡ | ✶ | ✶ |
 | Frogadier | 💧 | Stage 1 | 80 | 30 | ⚡ | ✶ | ✶ |
 | Snom | 💧 | Basic | 50 | 10 | ⌬ | ✶ | ✶ |
+| Piplup | 💧 | Basic | 60 |  | ⚡ | ✶ | ✶ |
 | Heliolisk | ⚡ | Stage 1 | 90 | 40+ | ✊ | ✶✶ | ✶ |
+| Magnemite<br>(Space-Time Smackdown) | ⚡ | Basic | 60 | 10 | ✊ | ✶ | ✶ |
+| Rotom | ⚡ | Basic | 70 | 20+ | ✊ | ✶ | ✶ |
 | Abra | 👁️ | Basic | 60 |  | 🌒 | ✶ | ✶ |
-| Ralts | 👁️ | Basic | 60 | 10 | 🌒 | ✶ | ✶ |
+| Ralts<br>(Genetic Apex) | 👁️ | Basic | 60 | 10 | 🌒 | ✶ | ✶ |
 | Woobat | 👁️ | Basic | 60 | 10 | 🌒 | ✶ | ✶ |
 | Mew EX | 👁️ | Basic | 130 |  | 🌒 | ✶✶✶ | ✶ |
+| Ralts<br>(Space-Time Smackdown) | 👁️ | Basic | 60 |  | 🌒 | ✶ | ✶ |
+| Kirlia<br>(Space-Time Smackdown) | 👁️ | Stage 1 | 80 | 20 | 🌒 | ✶ | ✶ |
 | Cubone | ✊️ | Basic | 60 |  | 🥬 | ✶ | ✶ |
 | Mienfoo | ✊️ | Basic | 60 | 20 | 👁️ | ✶ | ✶ |
 | Mienshao | ✊️ | Stage 1 | 80 | 40 | 👁️ | ✶ | ✶ |
+| Nosepass | ✊️ | Basic | 70 | 30 | 🥬 | ✶✶ | ✶✶ |
 | Zubat | 🌒️ | Basic | 50 | 10 | ️✊️ | ✶ | ✶ |
 | Golbat | 🌒️️ | Stage 1 | 70 | 40 | ✊ | ✶ | ✶ |
+| Spiritomb | 🌒️️ | Basic | 80 | 10+ | 🥬 | ✶ | ✶ |
+| Gible | 🐉 | Basic | 60 | 20 |  | ✶ | ✶ |
 
 ## Usable attacks without same typed deck energy
 
@@ -57,15 +70,27 @@
 | Exeggutor<br>(Genetic Apex) | 🥬 | Stage 1 | 130 | 30+ | 🔥 | 🥬 | ✶✶✶ | Exeggcute (Mythical Island) |
 | Exeggutor EX<br>(Genetic Apex) | 🥬 | Stage 1 | 160 | 40+ | 🔥 | 🥬 | ✶✶✶ | Exeggcute (Mythical Island) |
 | Exeggutor<br>(Mythical Island) | 🥬 | Stage 1 | 130 | 80+ | 🔥 | 🥬✶✶✶ | ✶✶✶ | Exeggcute (Mythical Island) |
+| 🥬attack |||||| 🥬🥬 || Exeggcute (Mythical Island), Dawn |
 | 💧Pokemon | 💧 ||||||| Misty |
-| Raichu<br>(Genetic Apex) | ⚡ | Stage 1 | 100 | 140 | ✊ | ⚡⚡⚡ | ✶ | Magneton, Lt. Surge |
-| Electrode | ⚡ | Stage 1 | 80 | 70 | ✊ | ⚡⚡ |  | Magneton, Lt. Surge |
-| Magneton | ⚡ | Stage 1 | 80 | 60 | ✊ | ⚡✶✶✶ | ✶✶ |  |
-| Electabuzz<br>(Genetic Apex) | ⚡ | Basic | 70 | 40+ | ✊ | ⚡⚡ | ✶ | Magneton, Lt. Surge |
-| Raichu<br>(Mythical Island) | ⚡ | Stage 1 | 120 | 60+ | ✊ | ⚡⚡⚡ | ✶✶ | Magneton, Lt. Surge |
-| Electabuzz<br>(Mythical Island) | ⚡ | Basic | 70 | 40 | ✊ | ⚡⚡ | ✶ | Magneton, Lt. Surge |
+| 💧attack |||||| 💧💧 || Misty, 💧Pokemon, Dawn |
+| 💧attack |||||| 💧💧💧💧 || Misty, Manaphy |
+| Raichu<br>(Genetic Apex) | ⚡ | Stage 1 | 100 | 140 | ✊ | ⚡⚡⚡ | ✶ | Magneton (Genetic Apex), Lt. Surge |
+| Electrode<br>(Genetic Apex) | ⚡ | Stage 1 | 80 | 70 | ✊ | ⚡⚡ |  | Magneton (Genetic Apex), Lt. Surge |
+| Magneton<br>(Genetic Apex) | ⚡ | Stage 1 | 80 | 60 | ✊ | ⚡✶✶✶ | ✶✶ |  |
+| Electabuzz<br>(Genetic Apex) | ⚡ | Basic | 70 | 40+ | ✊ | ⚡⚡ | ✶ | Magneton (Genetic Apex), Lt. Surge |
+| Raichu<br>(Mythical Island) | ⚡ | Stage 1 | 120 | 60+ | ✊ | ⚡⚡⚡ | ✶✶ | Magneton (Genetic Apex), Lt. Surge |
+| Electabuzz<br>(Mythical Island) | ⚡ | Basic | 70 | 40 | ✊ | ⚡⚡ | ✶ | Magneton (Genetic Apex), Lt. Surge |
+| Magnezone | ⚡ | Stage 2 | 140 | 110 | ✊ | ⚡✶✶ | ✶✶ | Magneton (Genetic Apex) |
+| Electrode<br>(Space-Time Smackdown) | ⚡ | Stage 1 | 80 | 50 | ✊ | ⚡ |  | Magneton (Genetic Apex), Lt. Surge |
+| Electabuzz<br>(Space-Time Smackdown) | ⚡ | Basic | 80 |  | ✊ | ⚡ | ✶ | Magneton (Genetic Apex), Lt. Surge |
+| Electivire | ⚡ | Stage 2 | 120 | 40+ | ✊ | ⚡⚡ | ✶✶✶ | Magneton (Genetic Apex), Lt. Surge / Volkner |
+| Luxray | ⚡ | Stage 2 | 130 | 120 | ✊ | ⚡⚡⚡ |  | Magneton (Genetic Apex), Volkner |
+| ⚡attack |||||| ⚡⚡ || Magneton (Genetic Apex), Dawn |
 | 👁️Pokemon | 👁️ ||||||| Gardevoir |
 | Gardevoir | 👁️ | Stage 2 | 110 | 60 | 🌒 | 👁️👁️✶️ | ✶✶ |  |
+| 👁️attack |||||| 👁️👁️ || Gardevoir, Dawn |
 | Golem<br>(Genetic Apex) | ✊️ | Stage 2 | 160 | 150 | ️🥬 | ✊️✶✶✶ | ✶✶✶✶ | Brock |
+| ✊attack |||||| ✊✊️ || Brock, Golem / Onix, Dawn |
+| any |||||||| opponent Porgon-Z |
 
-Last updated at: 2024/12/17
+Last updated at: 2025/01/31
