@@ -27,8 +27,9 @@
 | Exeggcute<br>(Mythical Island) | 🥬 | Basic | 50 |  | 🔥 | ✶ | ✶ |
 | Yanma | 🥬 | Basic | 50 | 20 | ⚡ | ✶ | ✶ |
 | Yanmega EX | 🥬 | Stage 1 | 140 | 120 | ⚡ | ✶✶✶ | ✶ |
-| Burmy | 🥬 | Basic | 60 | 10 | 🔥 | ✶ | ✶ |
-| Combee | 🥬 | Basic | 50 |  | 🔥 | ✶ | ✶ |
+| Burmy<br>(Space-Time Smackdown) | 🥬 | Basic | 60 | 10 | 🔥 | ✶ | ✶ |
+| Combee<br>(Space-Time Smackdown) | 🥬 | Basic | 50 |  | 🔥 | ✶ | ✶ |
+| Mothim | 🥬 | Stage 1 | 90 | 50 | ⚡ | ✶✶ |  |
 | Vulpix | 🔥 | Basic | 50 |  | 💧 | ✶ | ✶ |
 | Growlithe | 🔥 | Basic | 70 | 20 | 💧 | ✶✶ | ✶ |
 | Sizzlipede | 🔥 | Basic | 60 | 10 | 💧 | ✶ | ✶ |
@@ -47,21 +48,29 @@
 | Piplup | 💧 | Basic | 60 |  | ⚡ | ✶ | ✶ |
 | Heliolisk | ⚡ | Stage 1 | 90 | 40+ | ✊ | ✶✶ | ✶ |
 | Magnemite<br>(Space-Time Smackdown) | ⚡ | Basic | 60 | 10 | ✊ | ✶ | ✶ |
-| Rotom | ⚡ | Basic | 70 | 20+ | ✊ | ✶ | ✶ |
+| Rotom<br>(Space-Time Smackdown) | ⚡ | Basic | 70 | 20+ | ✊ | ✶ | ✶ |
 | Abra | 👁️ | Basic | 60 |  | 🌒 | ✶ | ✶ |
 | Ralts<br>(Genetic Apex) | 👁️ | Basic | 60 | 10 | 🌒 | ✶ | ✶ |
 | Woobat | 👁️ | Basic | 60 | 10 | 🌒 | ✶ | ✶ |
 | Mew EX | 👁️ | Basic | 130 |  | 🌒 | ✶✶✶ | ✶ |
 | Ralts<br>(Space-Time Smackdown) | 👁️ | Basic | 60 |  | 🌒 | ✶ | ✶ |
 | Kirlia<br>(Space-Time Smackdown) | 👁️ | Stage 1 | 80 | 20 | 🌒 | ✶ | ✶ |
+| Gastly<br>(Triumphant Light) | 👁️ | Basic | 50 |  | 🌒 | ✶ | ✶ |
+| Unown | 👁️ | Basic | 60 | 20 | 🌒 | ✶ | ✶ |
+| Rotom<br>(Triumphant Light) | 👁️ | Basic | 70 | 20 | 🌒 | ✶ | ✶ |
 | Cubone | ✊️ | Basic | 60 |  | 🥬 | ✶ | ✶ |
 | Mienfoo | ✊️ | Basic | 60 | 20 | 👁️ | ✶ | ✶ |
 | Mienshao | ✊️ | Stage 1 | 80 | 40 | 👁️ | ✶ | ✶ |
-| Nosepass | ✊️ | Basic | 70 | 30 | 🥬 | ✶✶ | ✶✶ |
-| Zubat | 🌒️ | Basic | 50 | 10 | ️✊️ | ✶ | ✶ |
-| Golbat | 🌒️️ | Stage 1 | 70 | 40 | ✊ | ✶ | ✶ |
+| Nosepass<br>(Space-Time Smackdown) | ✊️ | Basic | 70 | 30 | 🥬 | ✶✶ | ✶✶ |
+| Nosepass<br>(Promo-A) | ✊️ | Basic | 60 |  | 🥬 | ✶✶ | ✶ |
+| Nosepass<br>(Triumphant Light) | ✊️ | Basic | 80 | 10 | 🥬 | ✶ | ✶✶✶ |
+| Zubat<br>(Genetic Apex) | 🌒️ | Basic | 50 | 10 | ️✊️ | ✶ | ✶ |
+| Golbat<br>(Genetic Apex) | 🌒️️ | Stage 1 | 70 | 40 | ✊ | ✶ | ✶ |
 | Spiritomb | 🌒️️ | Basic | 80 | 10+ | 🥬 | ✶ | ✶ |
-| Gible | 🐉 | Basic | 60 | 20 |  | ✶ | ✶ |
+| Mawile<br>(Triumphant Light) | ⌬ | Basic | 70 | 20+ | 🔥 | ✶ | ✶ |
+| Bronzor<br>(Triumphant Light) | ⌬ | Basic | 60 | 10 | 🔥 | ✶ | ✶ |
+| Bronzong<br>(Triumphant Light) | ⌬ | Stage 1 | 120 | 50+ | 🔥 | ✶ | ✶✶✶ |
+| Gible<br>(Space-Time Smackdown) | 🐉 | Basic | 60 | 20 |  | ✶ | ✶ |
 
 ## Usable attacks without same typed deck energy
 
@@ -70,6 +79,7 @@
 | Exeggutor<br>(Genetic Apex) | 🥬 | Stage 1 | 130 | 30+ | 🔥 | 🥬 | ✶✶✶ | Exeggcute (Mythical Island) |
 | Exeggutor EX<br>(Genetic Apex) | 🥬 | Stage 1 | 160 | 40+ | 🔥 | 🥬 | ✶✶✶ | Exeggcute (Mythical Island) |
 | Exeggutor<br>(Mythical Island) | 🥬 | Stage 1 | 130 | 80+ | 🔥 | 🥬✶✶✶ | ✶✶✶ | Exeggcute (Mythical Island) |
+| 🥬Pokemon | 🥬 ||||||| Leafeon EX |
 | 🥬attack |||||| 🥬🥬 || Exeggcute (Mythical Island), Dawn |
 | 💧Pokemon | 💧 ||||||| Misty |
 | 💧attack |||||| 💧💧 || Misty, 💧Pokemon, Dawn |
@@ -80,7 +90,7 @@
 | Electabuzz<br>(Genetic Apex) | ⚡ | Basic | 70 | 40+ | ✊ | ⚡⚡ | ✶ | Magneton (Genetic Apex), Lt. Surge |
 | Raichu<br>(Mythical Island) | ⚡ | Stage 1 | 120 | 60+ | ✊ | ⚡⚡⚡ | ✶✶ | Magneton (Genetic Apex), Lt. Surge |
 | Electabuzz<br>(Mythical Island) | ⚡ | Basic | 70 | 40 | ✊ | ⚡⚡ | ✶ | Magneton (Genetic Apex), Lt. Surge |
-| Magnezone | ⚡ | Stage 2 | 140 | 110 | ✊ | ⚡✶✶ | ✶✶ | Magneton (Genetic Apex) |
+| Magnezone<br>(Space-Time Smackdown) | ⚡ | Stage 2 | 140 | 110 | ✊ | ⚡✶✶ | ✶✶ | Magneton (Genetic Apex) |
 | Electrode<br>(Space-Time Smackdown) | ⚡ | Stage 1 | 80 | 50 | ✊ | ⚡ |  | Magneton (Genetic Apex), Lt. Surge |
 | Electabuzz<br>(Space-Time Smackdown) | ⚡ | Basic | 80 |  | ✊ | ⚡ | ✶ | Magneton (Genetic Apex), Lt. Surge |
 | Electivire | ⚡ | Stage 2 | 120 | 40+ | ✊ | ⚡⚡ | ✶✶✶ | Magneton (Genetic Apex), Lt. Surge / Volkner |
@@ -93,4 +103,4 @@
 | ✊attack |||||| ✊✊️ || Brock, Golem / Onix, Dawn |
 | any |||||||| opponent Porgon-Z |
 
-Last updated at: 2025/01/31
+Last updated at: 2025/03/22
